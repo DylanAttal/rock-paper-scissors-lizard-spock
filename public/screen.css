@@ -1,9 +1,97 @@
 html {
   height: 100%;
+  color: #721817;
 }
 
 body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+}
+
+header {
+  background-color: #99b2dd;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.player-section {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  height: 100px;
+  width: auto;
+  transition: transform 0.2s;
+}
+
+.rock-outer {
+  display: flex;
+  justify-content: center;
+}
+
+.paper-scissors-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paper-scissors-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+}
+
+.lizard-spock-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lizard-spock-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+}
+
+p {
+  text-align: center;
+  z-index: 10;
+}
+
+.results-section {
+  order: 3;
+  background-color: #d9d0de;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.player-section img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 3px 5px rgb(54, 255, 4);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.big-green-ring {
+  transform: scale(1.5);
+  box-shadow: 0 0 3px 5px rgb(54, 255, 4);
+  border-radius: 50px;
+}
+
+.big-red-ring {
+  transform: scale(1.5);
+  box-shadow: 0 0 3px 5px #ff0000;
+  border-radius: 50px;
 }
