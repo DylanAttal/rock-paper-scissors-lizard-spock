@@ -93,6 +93,10 @@ let playerClickSpock = () => {
   winner()
 }
 
+let resetGame = () => {
+  document.location.reload()
+}
+
 const main = () => {
   document
     .querySelector('.player-section .rock')
@@ -109,6 +113,7 @@ const main = () => {
   document
     .querySelector('.player-section .spock')
     .addEventListener('click', playerClickSpock)
+  document.querySelector('.reset-button').addEventListener('click', resetGame)
 }
 
 document.addEventListener('DOMContentLoaded', main)

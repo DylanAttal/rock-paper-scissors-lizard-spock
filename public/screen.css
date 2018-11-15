@@ -64,12 +64,31 @@ img {
 
 p {
   text-align: center;
-  z-index: 10;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .results-section {
   order: 3;
   background-color: #d9d0de;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #ccc;
+}
+
+button:hover {
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
 }
 
 h2 {
@@ -78,20 +97,47 @@ h2 {
 }
 
 .player-section img:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
   box-shadow: 0 0 3px 5px rgb(54, 255, 4);
   border-radius: 50px;
   cursor: pointer;
 }
 
 .big-green-ring {
-  transform: scale(1.5);
+  transform: scale(1.4);
   box-shadow: 0 0 3px 5px rgb(54, 255, 4);
   border-radius: 50px;
 }
 
 .big-red-ring {
-  transform: scale(1.5);
+  transform: scale(1.4);
   box-shadow: 0 0 3px 5px #ff0000;
   border-radius: 50px;
+}
+
+@media only screen and (min-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .player-section {
+    order: 1;
+  }
+
+  .results-section {
+    order: 2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .computer-section {
+    order: 3;
+  }
 }
