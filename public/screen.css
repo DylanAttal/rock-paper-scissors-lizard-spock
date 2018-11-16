@@ -11,8 +11,19 @@ body {
 
 header {
   background-color: #99b2dd;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
+  line-height: 1rem;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+a:link,
+a:visited {
+  color: blue;
+  text-decoration: none;
 }
 
 main {
@@ -23,6 +34,11 @@ main {
 .player-section {
   display: flex;
   flex-direction: column;
+}
+
+.player-section h2,
+.computer-section h2 {
+  text-decoration: underline;
 }
 
 img {
