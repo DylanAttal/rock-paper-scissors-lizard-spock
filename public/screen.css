@@ -13,11 +13,15 @@ header {
   background-color: #99b2dd;
   padding: 0.5rem;
   text-align: center;
-  line-height: 1rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 1.9rem;
 }
 
 header p {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 a:link,
@@ -39,10 +43,12 @@ main {
 .player-section h2,
 .computer-section h2 {
   text-decoration: underline;
+  margin-right: 5px;
+  font-size: 1.8rem;
 }
 
 img {
-  height: 100px;
+  height: 70px;
   width: auto;
   transition: transform 0.2s;
 }
@@ -50,6 +56,8 @@ img {
 .rock-outer {
   display: flex;
   justify-content: center;
+  height: 100px;
+  margin-right: 5px;
 }
 
 .paper-scissors-outer {
@@ -62,7 +70,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 350px;
+  width: 270px;
 }
 
 .lizard-spock-outer {
@@ -75,12 +83,12 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 250px;
+  width: 180px;
 }
 
 p {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
@@ -94,7 +102,7 @@ p {
 }
 
 button {
-  width: 150px;
+  width: 100px;
   height: 30px;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -109,7 +117,7 @@ button:hover {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .player-section img:hover {
@@ -132,12 +140,29 @@ h2 {
 }
 
 @media only screen and (min-width: 700px) {
+  header {
+    line-height: 1rem;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  header p {
+    font-size: 1.3rem;
+  }
+
   main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 2rem;
     margin-right: 2rem;
+  }
+
+  img {
+    height: 100px;
+    width: auto;
   }
 
   .player-section {
@@ -155,5 +180,45 @@ h2 {
 
   .computer-section {
     order: 3;
+  }
+
+  .player-section h2,
+  .computer-section h2 {
+    margin-right: 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .rock-outer {
+    margin-right: 0;
+  }
+
+  .paper-scissors-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 350px;
+  }
+
+  .lizard-spock-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  button {
+    width: 150px;
+    height: 30px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background-color: #ccc;
   }
 }
